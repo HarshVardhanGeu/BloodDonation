@@ -356,7 +356,7 @@ $num8 = mysqli_num_rows($res8);
         </div>
 
         <div class="image">
-            <img src="images/cover.PNG" alt="">
+            <img src="images/cover.png" alt="">
         </div>
 
     </section>
