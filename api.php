@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $district = $_POST['city'];
 
     $stateurl = "https://cdn-api.co-vin.in/api/v2/admin/location/states/";
-    $states_info = file_get_contents($stateurl);
+    $states_info = curl_get_contents($stateurl);
     $state_json = json_decode($states_info, true);
 
     $state_id = -1;
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
     $disrict_url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/" . $state_id."/";
 
     //print_r($disrict_url);
-    $district_info = file_get_contents($disrict_url);
+    $district_info = curl_get_contents($disrict_url);
     $district_json = json_decode($district_info, true);
 
     $district_id = -1;
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
     //https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=89&date=19-05-2021
     $vaccine_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?" . $dis . "&date=" . $now . "&date=" . $tom."/";
     //print_r($vaccine_url);
-    $vaccine_info = file_get_contents($vaccine_url);
+    $vaccine_info = curl_get_contents($vaccine_url);
     $vaccine_json = json_decode($vaccine_info, true);
 
 
