@@ -348,7 +348,7 @@ $num8 = mysqli_num_rows($res8);
 
             <span>Let's fight Covid-19</span>
             <h3>We are in this together</h3>
-            <p>"Testing changes in life is to be feared, it is only to be understood. Now is the time to understand more, so
+            <p>"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so
                 that we may fear less."</p>
             <a href="#protect" class="btn">Donate Blood</a>
             <a href="#protect1" class="btn">Accept Blood</a>
