@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
             $state_id =  $state_json['states'][$x]['state_id'];
         }
     }
-    $disrict_url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/" . $state_id;
+    $disrict_url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/" . $state_id."/";
 
     //print_r($disrict_url);
     $district_info = file_get_contents($disrict_url);
